@@ -56,4 +56,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap \
     SoundRecorder \
-    BlockedNumberProvider 
+    BlockedNumberProvider \
+    MusicFX
