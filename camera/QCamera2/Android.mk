@@ -36,6 +36,7 @@ ifeq ($(TARGET_SUPPORT_HAL1),false)
 LOCAL_CFLAGS += -DQCAMERA_HAL3_SUPPORT
 else
 LOCAL_CFLAGS += -DQCAMERA_HAL1_SUPPORT
+LOCAL_CPPFLAGS += -Wno-c++14-extensions
 LOCAL_SRC_FILES += \
         HAL/QCamera2HWI.cpp \
         HAL/QCameraMuxer.cpp \
@@ -112,7 +113,7 @@ endif
 LOCAL_C_INCLUDES += \
         $(TARGET_OUT_HEADERS)/qcom/display
 LOCAL_C_INCLUDES += \
-        $(call project-path-for,qcom-display)/libqservice
+        hardware/qcom/display-caf/msm8996/libqservice 
 LOCAL_SHARED_LIBRARIES := liblog libhardware libutils libcutils libdl libsync
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libui libcamera_metadata
 LOCAL_SHARED_LIBRARIES += libqdMetaData libqservice libbinder
