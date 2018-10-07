@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Validus stuff.
-$(call inherit-product, vendor/validus/config/common_full_phone.mk)
+$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
 
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
@@ -27,7 +27,7 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Device identifier. This must come after all inclusions
 TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := validus_mido
+PRODUCT_NAME := gzosp_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
